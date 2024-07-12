@@ -26,4 +26,10 @@ public class NationalDNITest {
         assertThrows(IllegalArgumentException.class, () -> nationalDNI.calculateLetter(-1));
         assertThrows(IllegalArgumentException.class, () -> nationalDNI.calculateLetter(100000000));
     }
+
+    @Test
+    public void testGetFullDNI() {
+        nationalDNI.calculateLetter(12345678);
+        assertEquals("12345678-Z", nationalDNI.getFullDNI());
+    }
 }
