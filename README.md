@@ -14,5 +14,3 @@ The process must be repeated until the user presses "cancel".
 ## Requirements:
 
 - Unit tests of the function that calculates the letter should be performed.
-
-Translated with DeepL.com (free version)
